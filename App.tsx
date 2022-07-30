@@ -20,7 +20,7 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
     
-     <Text>
+     <Text testID='devTex' >
        dev
      </Text>
     </SafeAreaView>

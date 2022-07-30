@@ -10,6 +10,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@shopify/restyle": "^2.1.0",
     "react": "17.0.2",
     "react-native": "0.68.2"
   },
@@ -41,6 +42,7 @@
       "jsx",
       "json",
       "node"
-    ]
+    ],
+    "testRegex": "./src/.*test.tsx$"
   }
 }
