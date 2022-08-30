@@ -10,13 +10,18 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@shopify/restyle": "^2.1.0",
     "react": "17.0.2",
-    "react-native": "0.68.2"
+    "react-native": "0.68.2",
+    "react-native-icomoon": "^0.1.1",
+    "react-native-svg": "^13.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@testing-library/jest-native": "^4.0.11",
+    "@testing-library/react-native": "^11.0.0",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.67.3",
     "@types/react-test-renderer": "^17.0.1",
@@ -41,6 +46,10 @@
       "jsx",
       "json",
       "node"
+    ],
+    "testRegex": "./src/.*test.tsx$",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
     ]
   }
 }
