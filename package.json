@@ -12,7 +12,9 @@
   "dependencies": {
     "@shopify/restyle": "^2.1.0",
     "react": "17.0.2",
-    "react-native": "0.68.2"
+    "react-native": "0.68.2",
+    "react-native-icomoon": "^0.1.1",
+    "react-native-svg": "^13.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -46,6 +48,8 @@
       "node"
     ],
     "testRegex": "./src/.*test.tsx$",
-    "setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"]
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ]
   }
 }

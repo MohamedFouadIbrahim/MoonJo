@@ -1,15 +1,15 @@
-import { render } from '@testing-library/react-native';
+import { render, screen } from '@testing-library/react-native';
 import React from 'react';
 import 'react-native';
 import Header from '.';
 
 describe('Testing Header ', () => {
 
-    const header = render(<Header />)
+    render(<Header />)
 
-    it('Should Header Text', async () => {
-        const headerText = await header.findByTestId('header')
-        expect(headerText.props.children).toBe('Header')
+    it('Should Header Text', async () => { 
+        const headerText = await screen.findByTestId('header')
+        expect(headerText.children[0]).toBe('Header')
     })
-    
+
 })
