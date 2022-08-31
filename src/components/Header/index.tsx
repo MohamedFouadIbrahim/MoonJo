@@ -24,7 +24,7 @@ const Header = (props: HeaderProps) => {
         <Icon name='magnifying-glass' />
       </TouchableOpacity>
 
-      <Text testID='headerTitle' >{title}</Text>
+      <Text testID='headerTitle' >{'hghghg'}</Text>
 
       <TouchableOpacity testID='rightIcon' onPress={() => { }} >
         <Icon name='menu' />
